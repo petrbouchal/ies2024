@@ -1,8 +1,8 @@
 ---
 title: "Public Budgeting"
-subtitle: "IES Public Economics Guest Lectures"
+subtitle: "IES Public Economics BA course: Guest Lecture"
 author: "Petr Bouchal"
-date: "Mar 30, 2021"
+date: "March 30, 2021"
 output:
   xaringan::moon_reader:
     css: [xaringan-themer.css, slides.css]
@@ -73,7 +73,7 @@ style_mono_accent(
 )
 ```
 
-```{r fonts, include=FALSE}
+```{r fonts, include=FALSE, eval = FALSE}
 ptrr::register_plexsans()
 ptrr::register_plexsans_condensed()
 ```
@@ -100,9 +100,34 @@ meta() %>%
   write_meta("meta.html")
 ```
 
+---
+class: large, inverse
+
+# This lecture
+
+Motivation
+
+Concepts
+
+Data <=> Examples <=> Empirical questions
+---
+class: large, inverse, middle
+
+# Key takeaways
+
+---
+class: large, inverse, center, middle
+
+Public money = not just cash flowing
+
+More budgets than just the central state's
+
+Data offers multiple ways of looking at public money
+
+---
 class: large, left, middle, inverse
 
-# Why should we care about budgets?
+# Why care about budgets?
 
 ---
 class: left, top, large
@@ -137,7 +162,7 @@ class: large, inverse, middle
 # What is a budget?
 
 ---
-class: large
+class: large, middle
 
 
 A plan
@@ -157,16 +182,16 @@ class: inverse, middle
 ---
 class: large
 
-# Think stocks and flows
+# Think *stocks and flows*
 
-Budgets v. P&L x balance sheets
+Budgets / P&L *vs.* balance sheets
 
 = What is raised/spent v. what is owned and owed
 
 ---
 class: large
 
-# Think principals and agents: who accounts to whom
+# Think *principals and agents*: who accounts to whom
 
 Spenders to finance ministry
 
@@ -179,9 +204,9 @@ Member states <-> EU
 ---
 class: large
 
-# Think ex ante and ex post accountability
+# Think *ex ante* and *ex post* accountability
 
-budgets as plans vs. accounts as records of what happened
+Budgets as plans *vs.* accounts as records of what happened
 
 Accounting and economics concepts/language can clash
 
@@ -190,26 +215,176 @@ Accountability => data is generated!
 ---
 class: inverse, middle
 
-# Where does money come from
+# Where does money come from?
+
+---
+class: large, middle
+
+Money = what we get each year? Or: what we own?
+
+Tax or another means? 
+
+What kind of tax?
+
+Who pays it?
+
+Who collects it? Who sets the rates? (tax autonomy?)
+
+Who gets to spend it?
 
 ---
 
-![]
+???
+
+- Tax or something else: some revenue sources are similar to tax (insurance, fees etc.)
+- Using own assets (property, investments) to generate income
+- Tax on what? Wealth x income x consumption => efficiency and equity consequences
+- 
 
 ---
 
-## Income by level of government
+## Who gets to spend it: income by level of gov't
 
 ![:scale 80%](images/income.by.level.png)
 
+.small[source: IPR Praha calculations based on SNG/WOFI database]
+
+???
+
+See variation in extent of public spending
+
+Fiscal federalism != actual political federalism: large variation in role of local spending even in unitary states 
+
 ---
 
-## Sources of income by region (CZ)
+## Where money comes from: sources of income by region (CZ)
 
 ![:scale 80%](images/prijmy_gg.png)
+
+??? 
+
+One chart exposing multiple issues of budgeting in the modern state
+
+A version of fiscal federalism
+Spatial and socioeconomic patterns
+Own resources x what a city/region can raise
+Automatic transfers (share of tax) vs. subsidies to regions
+Subsidies from state can come with strings (current/investment)
+Only small share of wealth tax, and smaller in Prague => distributive and efficiency issues
+
+---
+
+## Property income = sell vs. maintain an asset
+
+![](images/prague-property-income.png)
+
+???
+
+Lesson = top-level budgets can hide detail. It can look good that a budget contains a lot of "own-source" income - but are we selling things, or using our assets to generate sustainable income? Very different long-term consequences
+
+Highlights link between asset income and investment/maintenance cost
+
+---
+
+## What kind of tax? (Local income)
+
+![:scale 80%](images/property.tax.sng.income.pc.ppp.usd.png)
+
+???
+
+Surprising variation: large property taxes in France and US
+
+## Impact of shocks
+
+COVID-19 chart(s) here
+
+---
+class: inverse, middle
+
+# How is public money spent?
+
+---
+class: middle, large
+
+By whom?
+
+Capital vs. current?
+
+Own activity vs. outsourced?
+
+Where?
+
+In what sector?
+
+
+---
+class: inverse, middle
+
+# How is public money managed?
+
+---
+class: large, middle
+
+The *administrative economy* of public spending
+
+The political problem of spending too much vs. the administrative problem of not being able to implement spending plans properly
+
+Institutions, rules, incentives
+
+---
+
+## Investment funding + cycles 
+
+![](images/prague-investments.png)
+
+???
+
+A large chunk of investment spending even in a rich city funded by EU
+
+This money has its own cycles
+
+Election cycles visible in overall spending
+
+---
+
+# Implementation gap ...chart needs redoing...
+
+![](images/praha-implgap.png)
+
+???
+
+tl;dr:
+
+- spending plans get revised upwards but then not even the initial plan is spent. 
+
+- the problem is bigger for 
+- similar patterns at national level
+
+Highlights issue of practical implementation: budgeting is meaningless if we cannot actually execute on plans
+
+This is not just because of admin capacity - also incentives
+
 ---
 
 
+---
+class: large, middle
+
+=> Public Financial Management
+
+- how to achieve efficiency?
+- how to run budgeting as a planning process?
+- how to budget for results?
+
+
+---
+class: large, inverse, middle
+
+# How to get and use the data
+
+---
+
+TO DO: advert for R packages etc.
 
 ---
 
