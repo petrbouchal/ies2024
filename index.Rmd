@@ -110,7 +110,8 @@ Concepts
 
 Data ↔ Examples ↔ Empirical questions
 
-Examples are micro- & local-level but hopefully stimulate and illustrate
+*Examples are micro- & local-level but hopefully stimulate and illustrate*
+
 ---
 class: large, inverse, middle
 
@@ -200,9 +201,11 @@ class: large
 Budgets / P&L × balance sheets
 
 = What is raised/spent × what is owned and owed
+
+
+*Reflected in different data published*
 ]
 
-Reflected in different data published
 
 ---
 class: large
@@ -455,9 +458,34 @@ class: large, inverse, middle
 # How to get and use the data
 
 If you like lots of data and work in R...
+
 ---
+class: medium
 
+## {statnipokladna}
 
+On CRAN. Documentation at [petrbouchal.github.io/statnipokladna](https://petrbouchal.github.io/statnipokladna) also explains how to use and understand the data.
+
+<img src="images/sp.png" alt="drawing" width="250"/>
+
+Provides data published at [monitor.statnipokladna.cz/](https://monitor.statnipokladna.cz/).
+
+---
+class: medium
+
+## Also useful
+
+[<img src="images/czso.png" alt="drawing" width="250"/>](https://petrbouchal.xyz/czso)
+[<img src="images/vsezved.png" alt="drawing" width="250"/>](https://petrbouchal.xyz/vsezved)
+
+Czech statistical data // school register
+
+{[CzechData](https://jancaha.github.io/CzechData/)}
+{[RCzechia](https://cran.r-project.org/package=RCzechia)} for Czech geospatial data and metadata, also geocoding
+
+{[eurostat](https://cran.r-project.org/package=eurostat)
+{[wbstats](gshs-ornl.github.io/wbstats/)}
+{[oecd](https://cran.r-project.org/package=OECD)} for accessing data from these orgs
 
 ---
 
