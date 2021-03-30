@@ -100,7 +100,6 @@ meta() %>%
   write_meta("meta.html")
 ```
 
----
 class: large, inverse
 
 # This lecture
@@ -109,7 +108,9 @@ Motivation
 
 Concepts
 
-Data <=> Examples <=> Empirical questions
+Data ↔ Examples ↔ Empirical questions
+
+Examples are micro- & local-level but hopefully stimulate and illustrate
 ---
 class: large, inverse, middle
 
@@ -117,6 +118,8 @@ class: large, inverse, middle
 
 ---
 class: large, inverse, center, middle
+
+What use are budgets and accounts
 
 Public money = not just cash flowing
 
@@ -173,44 +176,69 @@ A solution to collective action problems
 
 An accountability tool
 
+???
+
+Someone writes the plan, someone has influence over it
+
+Collective decisions: both between institutions, between state and society, and between groups of citizens/voters (=> intergenerational and other equity and distributional effects)
+
+Collective action problems: public money = common pool resource
+
+Acctounability for following the plan
+
 ---
 class: inverse, middle
 
 
-# What else can we know about public money
+# What else can we know about public money?
 
 ---
 class: large
 
 # Think *stocks and flows*
+.center[
+Budgets / P&L × balance sheets
 
-Budgets / P&L *vs.* balance sheets
+= What is raised/spent × what is owned and owed
+]
 
-= What is raised/spent v. what is owned and owed
+Reflected in different data published
 
 ---
 class: large
 
 # Think *principals and agents*: who accounts to whom
 
-Spenders to finance ministry
+Spenders (public orgs) → finance ministry
 
-Executive to legislature
+Executive → legislature (Supreme Audit Institutions)
 
-Supreme Audit Institutions
+Member states ↔︎ EU
 
-Member states <-> EU
+State → voters?
+
+???
+
+Related information asymmetries and attempts to alleviate them
+
+The data you see is often a by-product of these processes
 
 ---
 class: large
 
 # Think *ex ante* and *ex post* accountability
 
-Budgets as plans *vs.* accounts as records of what happened
+Budgets as plans × accounts as records of what happened
 
 Accounting and economics concepts/language can clash
 
-Accountability => data is generated!
+Accountability → data is generated!
+
+???
+
+Data often a reflection of budgeting and accounting processes
+
+To work with some parts of it, you need some familiarity with accounting concepts and with the rules around budgeting and accounting in the public sector
 
 ---
 class: inverse, middle
@@ -232,20 +260,34 @@ Who collects it? Who sets the rates? (tax autonomy?)
 
 Who gets to spend it?
 
----
-
 ???
 
 - Tax or something else: some revenue sources are similar to tax (insurance, fees etc.)
 - Using own assets (property, investments) to generate income
 - Tax on what? Wealth x income x consumption => efficiency and equity consequences
-- 
 
 ---
 
+class: center, middle
+
+## Aside: credits and data sources
+
+Data: 
+
+- [Státní pokladna MF ČR (State Treasury)](https://monitor.statnipokladna.cz/) via own [R package](https://petrbouchal.xyz/statnipokladna/) combined with [CZSO data](https://www.czso.cz/csu/czso/otevrena_data) via own [R package](https://petrbouchal.xyz/czso/)
+- [WOFI SNG database](http://www.sng-wofi.org/data/) via [OECD R package](https://cran.r-project.org/web/packages/OECD/index.html)
+
+Analysis:
+
+- mostly own/colleagues at IPR Praha (publication in [CZ](http://www.iprpraha.cz/uploads/assets/dokumenty/chude_mesto_prazske.pdf) and [EN](http://www.iprpraha.cz/uploads/assets/dokumenty/ssp/analyzy/ekonomika/chude%20mesto%20aj/ipr_chude_mesto_prazske_sazba_en.pdf))
+- with Petr Janský, [work in progress](https://obce-covid19.netlify.app/)
+
+Apologies for Czech/inadequate labels; will try to explain as I go.
+
+---
 ## Who gets to spend it: income by level of gov't
 
-![:scale 80%](images/income.by.level.png)
+![:scale 70%](images/income.by.level.fill.png)
 
 .small[source: IPR Praha calculations based on SNG/WOFI database]
 
@@ -253,13 +295,13 @@ Who gets to spend it?
 
 See variation in extent of public spending
 
-Fiscal federalism != actual political federalism: large variation in role of local spending even in unitary states 
+Fiscal federalism != actual political federalism: large variation in role of local spending even in unitary states (Denmark...)
 
 ---
 
 ## Where money comes from: sources of income by region (CZ)
 
-![:scale 80%](images/prijmy_gg.png)
+![:scale 70%](images/prijmy_gg.png)
 
 ??? 
 
@@ -276,7 +318,7 @@ Only small share of wealth tax, and smaller in Prague => distributive and effici
 
 ## Property income = sell vs. maintain an asset
 
-![](images/prague-property-income.png)
+![:scale 60%](images/prague-property-income.png)
 
 ???
 
@@ -288,15 +330,19 @@ Highlights link between asset income and investment/maintenance cost
 
 ## What kind of tax? (Local income)
 
-![:scale 80%](images/property.tax.sng.income.pc.ppp.usd.png)
+![:scale 70%](images/property.tax.sng.income.pc.ppp.usd.png)
 
 ???
 
 Surprising variation: large property taxes in France and US
 
+Czechia way down there
+
+---
+
 ## Impact of shocks
 
-COVID-19 chart(s) here
+![:scale 70%](images/real-bil-typ-hist-1.png)
 
 ---
 class: inverse, middle
@@ -316,6 +362,28 @@ Where?
 
 In what sector?
 
+---
+class: large
+
+## Capital spending by level of govt
+
+![:scale 70%](images/capital.expenditure.by.level.fill.png)
+---
+class: large
+
+## Capital spending → assets
+
+![:scale 60%](images/majetek-mc.png)
+
+???
+
+Again, linkage between stocks and flows
+
+Invest => own an asset => generate income & maintenance cost
+
+One of the hardest practical questions in managing public money
+- account for future income and cost
+- have processes for linking stocks and flows, not planning just cash
 
 ---
 class: inverse, middle
@@ -325,17 +393,21 @@ class: inverse, middle
 ---
 class: large, middle
 
-The *administrative economy* of public spending
+## "The *administrative economy* of public spending"
 
-The political problem of spending too much vs. the administrative problem of not being able to implement spending plans properly
+The *political* problem: how not to spend too much / spend wisely
+
+×
+
+the *administrative* problem of (not) implementing spending plans properly
 
 Institutions, rules, incentives
 
 ---
 
-## Investment funding + cycles 
+## Investment funding + cycles (Prague)
 
-![](images/prague-investments.png)
+![:scale 60%](images/prague-investments.png)
 
 ???
 
@@ -343,13 +415,15 @@ A large chunk of investment spending even in a rich city funded by EU
 
 This money has its own cycles
 
-Election cycles visible in overall spending
+Election cycles visible in overall spending - different for EU and Prague money
+
+Very little state money subsidising Prague investments - less than in other regions. Could compare with benefit? Tells you st about the financial relationships between the different levels of govt
 
 ---
 
-# Implementation gap ...chart needs redoing...
+## Implementation gap (Prague)
 
-![](images/praha-implgap.png)
+![:scale 60%](images/praha-implgap.png)
 
 ???
 
@@ -357,7 +431,7 @@ tl;dr:
 
 - spending plans get revised upwards but then not even the initial plan is spent. 
 
-- the problem is bigger for 
+- the problem is bigger for investment
 - similar patterns at national level
 
 Highlights issue of practical implementation: budgeting is meaningless if we cannot actually execute on plans
@@ -365,16 +439,14 @@ Highlights issue of practical implementation: budgeting is meaningless if we can
 This is not just because of admin capacity - also incentives
 
 ---
-
-
----
 class: large, middle
 
-=> Public Financial Management
+ → Public Financial Management
 
 - how to achieve efficiency?
 - how to run budgeting as a planning process?
-- how to budget for results?
+- how to budget for results? (link spending to policy outcomes)
+- how to understand impacts (and on whom)
 
 
 ---
@@ -382,14 +454,17 @@ class: large, inverse, middle
 
 # How to get and use the data
 
+If you like lots of data and work in R...
 ---
 
-TO DO: advert for R packages etc.
+
 
 ---
 
 class: inverse, bottom, right, large
 layout: false
+
+.left[[petrbouchal.xyz/ies2021](https://petrbouchal.xyz/ies2021)]
 
 <a href="https://twitter.com/petrbouchal">`r fa("twitter", fill = "white")`</a> <a href="https://github.com/petrbouchal">`r fa("github", fill = "white")`</a> <a href="https://linkedin.com/in/petrbouchal">`r fa("linkedin", fill = "white")`</a> petrbouchal  
 [petrbouchal.xyz](https://petrbouchal.xyz)  
