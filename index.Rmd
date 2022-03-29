@@ -503,7 +503,7 @@ Czech statistical data // school register
 class: inverse, bottom, right, large
 layout: false
 
-.left[[petrbouchal.xyz/ies2021](https://petrbouchal.xyz/ies2021)]
+.left[[petrbouchal.xyz/ies2022](https://petrbouchal.xyz/ies2021)]
 
 <a href="https://twitter.com/petrbouchal">`r fa("twitter", fill = "white")`</a> <a href="https://github.com/petrbouchal">`r fa("github", fill = "white")`</a> <a href="https://linkedin.com/in/petrbouchal">`r fa("linkedin", fill = "white")`</a> petrbouchal  
 [petrbouchal.xyz](https://petrbouchal.xyz)  
