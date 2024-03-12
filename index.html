@@ -4,7 +4,7 @@
     <title>Public Budgeting</title>
     <meta charset="utf-8" />
     <meta name="author" content="Petr Bouchal" />
-    <meta name="date" content="2022-03-28" />
+    <meta name="date" content="2024-03-12" />
     <script src="libs/header-attrs/header-attrs.js"></script>
     <script src="libs/clipboard/clipboard.min.js"></script>
     <link href="libs/shareon/shareon.min.css" rel="stylesheet" />
@@ -38,10 +38,18 @@
     <textarea id="source">
 class: bottom, left, inverse, title-slide
 
+.title[
 # Public Budgeting
+]
+.subtitle[
 ## IES Public Economics BA course: Guest Lecture
+]
+.author[
 ### Petr Bouchal
-### March 28, 2022
+]
+.date[
+### March 12, 2024
+]
 
 ---
 
@@ -119,7 +127,7 @@ class: left, top, large
 
 --
 
-5. How is public money managed? (Rules, Institutions)
+5. How is public money managed? (Rules, Inst'ns)
 
 --
 
@@ -134,11 +142,19 @@ class: large, middle
 
 A plan
 
+--
+
 An expression of collective decisions
+
+--
 
 A solution to collective action problems
 
+--
+
 An accountability tool
+
+--
 
 ???
 
@@ -160,15 +176,14 @@ class: inverse, middle
 class: large
 
 # Think *stocks and flows*
-.center[
+
+.center[.middle[
 Budgets / P&amp;L × balance sheets
 
 = What is raised/spent × what is owned and owed
 
-
 *Reflected in different data published*
-]
-
+]]
 
 ---
 class: large
@@ -239,19 +254,19 @@ Who gets to spend it?
 
 ---
 
-class: center, middle
+class: middle
 
 ## Aside: credits and data sources
 
 Data: 
 
 - [Státní pokladna MF ČR (State Treasury)](https://monitor.statnipokladna.cz/) via own [R package](https://petrbouchal.xyz/statnipokladna/) combined with [CZSO data](https://www.czso.cz/csu/czso/otevrena_data) via own [R package](https://petrbouchal.xyz/czso/)
-- [WOFI SNG database](http://www.sng-wofi.org/data/) via [OECD R package](https://cran.r-project.org/web/packages/OECD/index.html)
+- [WOFI SNG database](http://www.sng-wofi.org/data/) via [OECD R package](https://cran.r-project.org/web/packages/OECD/index.html). 2019 data used here, 2022 available from OECD.
 
 Analysis:
 
 - mostly own/colleagues at IPR Praha (publication in [CZ](http://www.iprpraha.cz/uploads/assets/dokumenty/chude_mesto_prazske.pdf) and [EN](http://www.iprpraha.cz/uploads/assets/dokumenty/ssp/analyzy/ekonomika/chude%20mesto%20aj/ipr_chude_mesto_prazske_sazba_en.pdf))
-- with Petr Janský, [work in progress](https://obce-covid19.netlify.app/)
+- with Petr Janský, [work on local budgets in COVID-19](https://obce-covid19.netlify.app/)
 
 Apologies for Czech/inadequate labels; will try to explain as I go.
 
@@ -376,7 +391,7 @@ Institutions, rules, incentives
 
 ---
 
-## Investment funding + cycles (Prague)
+## Investment funding over ...? (Prague)
 
 ![:scale 60%](images/prague-investments.png)
 
@@ -445,13 +460,14 @@ class: medium
 
 [&lt;img src="images/czso.png" alt="drawing" width="250"/&gt;](https://petrbouchal.xyz/czso)
 [&lt;img src="images/vsezved.png" alt="drawing" width="250"/&gt;](https://petrbouchal.xyz/vsezved)
+[&lt;img src="images/ispv.png" alt="drawing" width="250"/&gt;](https://petrbouchal.xyz/ispv)
 
-Czech statistical data // school register
+Czech statistical data // school register // jobs &amp; pay data
 
 {[CzechData](https://jancaha.github.io/CzechData/)}
 {[RCzechia](https://cran.r-project.org/package=RCzechia)} for Czech geospatial data and metadata, also geocoding
 
-{[eurostat](https://cran.r-project.org/package=eurostat)
+{[eurostat](https://cran.r-project.org/package=eurostat)}
 {[wbstats](gshs-ornl.github.io/wbstats/)}
 {[oecd](https://cran.r-project.org/package=OECD)} for accessing data from these orgs
 
@@ -518,6 +534,19 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     deleted = true;
   });
 })();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
 (function() {
   "use strict"
   // Replace <script> tags in slides area to make them executable
